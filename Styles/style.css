@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+}
+body {
+    background-color: #F3F5FC;
+    border: 0rem;
+    padding: 0rem;
+}
+header img {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+main {
+    justify-items: center;
+    align-content: center;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.input-container {
+    width: 70%;
+    height: 75vh;
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+.input-container textarea {
+    width: 100%;
+    height: 80%;
+    font-size: 1rem;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid transparent;
+    outline: none;
+    resize: none;
+    line-height: 1.4;
+}
+.input-container .warning {
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+.input-container .botones {
+    width: 100%;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.input-container button {
+    font-size: 0.75rem;
+    width: 30%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 24px;
+}
+.encriptar {
+    background-color: #0A3871;
+    color: white;
+    border: 1px solid #0A3871;
+    font-size: 0.25rem;
+}
+.encriptar:hover {
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    transform: scale(1.05);
+}
+.desencriptar {
+    background-color: white;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    font-size: 0.25rem;
+}
+.desencriptar:hover {
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    transform: scale(1.05);
+}
+.output-container {
+    width: 25%;
+    height: 85vh;
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+.output-container textarea {
+    width: 100%;
+    height: 90%;
+    font-size: 1rem;
+    background-color: white;
+    color: #0A3871;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid transparent;
+    outline: none;
+    resize: none;
+    line-height: 1.4;
+}
+.output-container .copiar {
+    width: 92.5%;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background-color: white;
+    font-size: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.output-container .copiar:hover {
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    transform: scale(1.05);
+}
+footer {
+    font-size: 0.75rem;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 1440px) {
+    .output-container {
+        width: 70%;
+    }
+}
+@media (max-width: 900px) {
+    header img {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    .input-container {
+        width: 100%;
+    }
+    .output-container {
+        width: 100%;
+    }
+    .input-container .encriptar {
+        width: 50%;
+    }
+    .output-container .desencriptar {
+        width: 50%;
+    }
+}
+@media (max-width: 680px) {
+    .input-container textarea {
+        font-size: 0.75rem;
+    }
+    .input-container .warning {
+        width: 100%;
+        padding: 0rem;
+        font-size: 0.45rem;
+    }
+    .output-container textarea {
+        font-size: 0.75rem;
+    }
+    .input-container .encriptar, .input-container .desencriptar {
+        width: 35%;
+        font-size: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .output-container .copiar {
+        width: 90%;
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .input-container {
+        height: 65vh;
+    }
+    .output-container {
+        height: 75vh;
+    }
+    .input-container textarea {
+        height: 60%;
+        font-size: 0.65rem;
+        padding: 0rem 0.5rem;
+    }
+    .input-container .botones {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .output-container textarea {
+        font-size: 0.65rem;
+    }
+    .input-container .encriptar, .input-container .desencriptar {
+        width: 75%;
+        margin: 0.25rem auto;
+        font-size: 0.5rem;
+    }
+    .output-container .copiar {
+        text-align: center;
+        width: 80%;
+        font-size: 0.5rem;
+    }
+}
